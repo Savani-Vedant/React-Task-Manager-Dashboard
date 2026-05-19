@@ -1,16 +1,68 @@
-# React + Vite
+# React Task Manager Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight task manager dashboard built with React and Vite. Manage tasks with an intuitive UI, filter and add tasks, and persist them in local storage.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Live locally: run the app with `npm run dev` and open the URL shown by Vite.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Create, edit and delete tasks
+- Filter tasks by status or search text
+- Responsive dashboard layout with task cards
+- Persist tasks using a `useLocalStorage` hook
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- JavaScript (ESLint)
+- CSS for styling
+
+## Quick Start
+
+1. Install dependencies
+
+```bash
+npm install
+```
+
+2. Run the dev server
+
+```bash
+npm run dev
+```
+
+3. Build for production
+
+```bash
+npm run build
+```
+
+4. Preview production build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+- `index.html` — Vite entry
+- `src/main.jsx` — React entry
+- `src/App.jsx` — App root
+- `src/components/` — UI components (FilterBar, Navbar, TaskCard, TaskForm, TaskList)
+- `src/hooks/useLocalStorage.js` — localStorage helper hook
+- `src/pages/Home.jsx` — main dashboard page
+- `src/services/quoteService.js` — example service
+
+## Usage
+
+- Open the dashboard and use the form to add tasks.
+- Use the filter bar to search or filter by status.
+- Tasks are stored in browser localStorage and will persist between reloads.
+
+## Notes
+
+- This project is a simple demo/dashboard intended for learning and small projects.
+
+
